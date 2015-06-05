@@ -19,3 +19,10 @@ x_values = x_values[19:]
 
 
 plt.plot(x_values, normalised_data)
+plt.xlabel("wavenumber $\lambda$ [nm]")
+plt.ylabel("intesity [V]")
+
+plt.xlim(x_values.min(), x_values.max())
+plt.ylim(0.8*normalised_data.min(), 1.1*normalised_data.max())
+
+plt.grid(True)
